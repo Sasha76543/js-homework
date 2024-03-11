@@ -1,17 +1,15 @@
-var modal = document.getElementById("modal");
-var btn = document.getElementById("button");
-var span = document.getElementsByClassName("button-close")[0];
+const open = document.querySelector('[data-action="open-modal"]');
+const modal = document.querySelector(".js-backdrop");
+const close = document.querySelector('[data-action="close-modal"]');
+const body = document.body;
 
-btn.onclick = function() {
-    modal.style.display = "flex";
+function toOpenModal() {
+  body.classList.toggle("show-modal");
 }
-
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+open.addEventListener("click", toOpenModal);
+close.addEventListener("click", toOpenModal);
+modal.addEventListener("click", () => {
+  if (event.target === modal) {
+    body.classList.remove("show-modal");
+  }
+});
