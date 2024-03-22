@@ -89,12 +89,48 @@
   <button onclick="checkDay()">Перевірити</button>
   
   <p id="result"></p> -->
-
+    <!-- 
   <label for="month">Enter month number (1-12):</label>
   <input type="number" id="month" min="1" max="12">
   <button onclick="checkSeason()">Check Season</button>
-  <p id="output"></p>
+  <p id="output"></p> -->
+    <!-- 
+    <h1>Дні місяця</h1>
 
+    <label for="month">Виберіть номер місяця (1-12):</label>
+    <input type="number" id="month" min="1" max="12" />
+    <button onclick="getDays()">Перевірити</button>
+
+    <p id="result"></p> -->
+
+    <!-- <label for="Input">Виберіть колір:</label>
+    <input type="text" id="Input" />
+    <button onclick="checkColor()">Check Action</button>
+    <p id="Message"></p> -->
+
+    <h2>Калькулятор</h2>
+    <form id="calculatorForm">
+      <label for="number1">Виберіть 1 число:</label>
+      <input type="number" id="number1" name="number1" required />
+      <br /><br />
+
+      <label for="number2">Вибеіть 2 число:</label>
+      <input type="number" id="number2" name="number2" required />
+      <br /><br />
+
+      <label for="operation">Оберіть операцію:</label>
+      <select id="operation" name="operation">
+        <option value="+">Додати (+)</option>
+        <option value="-">Відняти (-)</option>
+        <option value="*">Помножити (*)</option>
+        <option value="/">Поділити (/)</option>
+      </select>
+      <br /><br />
+
+      <button type="button" onclick="calculate()">Порахувати</button>
+    </form>
+
+    <p id="result"></p>
     <script src="./js11/script.js"></script>
   </body>
 </html>
