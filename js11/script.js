@@ -96,33 +96,33 @@
 //   }
 // }
 //6
-function calculate() {
-  const num1 = parseFloat(document.getElementById("number1").value);
-  const num2 = parseFloat(document.getElementById("number2").value);
-  const operation = document.getElementById("operation").value;
-  let result;
+// function calculate() {
+//   const num1 = parseFloat(document.getElementById("number1").value);
+//   const num2 = parseFloat(document.getElementById("number2").value);
+//   const operation = document.getElementById("operation").value;
+//   let result;
 
-  if (operation === "/" && num2 === 0) {
-    document.getElementById("result").textContent =
-      "Помилка на 0 ділити не можна!";
-  } else {
-    switch (operation) {
-      case "+":
-        result = num1 + num2;
-        break;
-      case "-":
-        result = num1 - num2;
-        break;
-      case "*":
-        result = num1 * num2;
-        break;
-      case "/":
-        result = num1 / num2;
-        break;
-      default:
-        result = "НЕмає такої операції";
-    }
+//   if (operation === "/" && num2 === 0) {
+//     document.getElementById("result").textContent =
+//       "Помилка на 0 ділити не можна!";
+//   } else {
+//     switch (operation) {
+//       case "+":
+//         result = num1 + num2;
+//         break;
+//       case "-":
+//         result = num1 - num2;
+//         break;
+//       case "*":
+//         result = num1 * num2;
+//         break;
+//       case "/":
+//         result = num1 / num2;
+//         break;
+//       default:
+//         result = "НЕмає такої операції";
+//     }
 
-    document.getElementById("result").textContent = `Результат: ${result}`;
-  }
-}
+//     document.getElementById("result").textContent = `Результат: ${result}`;
+//   }
+// }
