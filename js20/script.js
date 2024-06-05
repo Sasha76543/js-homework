@@ -45,4 +45,50 @@ let peoples = [
   let femaleUserNames = femaleUsers.map(user => user.name);
   
   console.log(femaleUserNames);
+
+  //4
+  const user = [
+    { id: 1, name: 'Саша', isActive: true },
+    { id: 2, name: 'Богдан', isActive: false },
+    { id: 3, name: 'Софія', isActive: false },
+    { id: 4, name: 'Маша', isActive: true }
+  ];
+  
+  const inactiveUsers = user.filter(user => !user.isActive);
+  
+  console.log(inactiveUsers);
+ //5
+const corustuvachi = [
+  { id: 1, name: 'Sasha', email: 'sasha@gamail.com' },
+  { id: 2, name: 'Sophie', email: 'sophie@gamail.com' },
+  { id: 3, name: 'Bogdan', email: 'bogdan@gamail.com' },
+  { id: 4, name: 'Masha', email: 'masha@gamail.com' }
+];
+
+function getUserByEmail(email) {
+  return corustuvachi.find(user => user.email === email);
+}
+
+const userEmail = 'bogdan@gamail.com';
+const foundUser = getUserByEmail(userEmail);
+
+console.log(foundUser);
+
+  //6
+const peopless = [
+  {id: 1, name: 'Sasha', age: '14'},
+  {id: 2, name: 'Masha', age: '11'},
+  {id: 3, name: 'Sophie', age: '10'},
+  {id: 4, name: 'Bogdan', age: '15'}
+]
+function getUsersInAgeRange(minAge, maxAge) {
+  return users.filter(user => user.age >= minAge && user.age <= maxAge);
+}
+
+
+const minAge = 25;
+const maxAge = 35;
+const usersInAgeRange = getUsersInAgeRange(minAge, maxAge);
+
+console.log(usersInAgeRange);
   
